@@ -2,7 +2,7 @@ services:
   - type: web
     name: streamlit-app
     env: python
-    region: us
+    region: us-west-2 # これがOregonリージョンを指定する部分です
     buildCommand: ""
     startCommand: streamlit run app3.py
     plan: free
