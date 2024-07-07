@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: streamlit-app
+    env: python
+    region: us
+    buildCommand: ""
+    startCommand: streamlit run app3.py
+    plan: free
+    repo: git@github.com:t3o3/voice.git
+    branch: master
+    envVars:
+      - key: WEB_CONCURRENCY
+        value: "1"
